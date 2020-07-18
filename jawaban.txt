@@ -1,0 +1,61 @@
+UJIAN AKHIR SEMESTER
+
+
+Nama	: Misbachul Munir
+NIM	: 311710280
+Kelas	: TI.17.D.4
+Matkul  : Arsitektur & Organisasi Komputer
+Dosen	: Najamuddin Dwi Miharja,S.Kom,M.Kom
+
+Soal
+1.	Dalam arsitektur komputer ada 4 komponen Utama CPU, Sebutkan dan jelaskan kegunanaanya?
+2.	Control Unit adalah bagian dari komputer yang menggenerasi signal yang mengontrol operasi komputer, sebutkan jenis apa saja yang termasuk Control Unit?
+3.	Set instruksi (instruction set) adalah sekumpulan lengkap instruksi yang dapat di mengerti oleh sebuah CPU. Set instruksi sering juga disebut sebagai bahasa mesin . sebutkan macam-macam format Instruksi?
+4.	Direct Memory Access (DMA) adalah suatu metode transfer data dari memori komputer atau RAM ke suatu bagian dari komputer tanpa memprosesnya menggunakan CPU. Sebutkan kelebihan menggunakan DMA?
+5.	Pipeline adalah mesin yang melaksanakan beberapa komputasi yang berbeda secara bersama-sama ,namun pada saat itu setiap komputasi akan berada dalam tahapan eksekusi yang berbeda. Sebutkan dua kategori Pipeline?
+
+Jawaban
+
+1.	Adapun penjelasannya sebagai berikut:
+a.	ALU (Arithmatic Logical Unit)
+berfungsi melakukan operasi/perhitungan aritmatika dan logika (penjumlahan, pengurangan dan beberapa logika lain).
+b.	CU (Control Unit)
+Untuk memberikan arahan/kendali/ kontrol terhadap operasi yang dilakukan oleh ALU (Arithmetic Logical Unit) di dalam CPU.
+Fungsi Control Unit :
+•	Mengatur & mengendalikan alat-alat input dan output.
+•	Mengambil instruksi-instruksi dari memori utama.
+•	Mengambil data dari memori utama (jika diperlukan).
+•	Mengirim instruksi ke ALU bila ada perhitungan aritmatika atau perbandingan logika serta mengawasi kerja dari ALU.
+•	Menyimpan hasil proses ke memori utama.
+c.	Register
+Merupakan memori yang terdapat di dalam CPU, register adalah Alat penyimpanan kecil dengan kecepatan akses yang tinggi, digunakan untuk menyimpan data dan instruksi yang sedang diproses, sementara data dan instruksi lainnya menunggu giliran untuk diproses, masih disimpan di dalam memori utama.
+d.	CPU Interconnection
+Merupakan alur transfer data atau perintah yang diberikan yang menghubungkan ALU, CU sdan REGISTER.
+
+
+2.	Berikut merupakan jenis yang termasuk Control Unit.
+a.	Single-Cycle CU
+Proses di CU ini hanya terjadi dalam satu clock cycle, artinya setiap instruksi ada pada satu cycle, maka dari itu tidak memerlukan state. Dengan demikian fungsi boolean masing-masing control line hanya merupakan fungsi dari opcode saja. Clock cycle harus mempunyai panjang yang sama untuk setiap jenis instruksi. Ada dua bagian pada unit kontrol ini, yaitu proses men-decodeopcode untuk mengelompokkannya menjadi 4 macam instruksi (yaitu di gerbang AND), dan pemberian sinyal kontrol berdasarkan jenis instruksinya (yaitu gerbang OR). Keempat jenis instruksi adalah “R-format” (berhubungan dengan register), “lw” (membaca memori), “sw” (menulis ke memori), dan “beq” (branching). 
+
+b.	Multi-Cycle CU
+Unit kontrol yang multi-cycle lebih memiliki banyak fungsi. Dengan memperhatikan state dan opcode, fungsi boolean dari masing-masing outputcontrol line dapat ditentukan. Masing-masingnya akan menjadi fungsi dari 10 buah input logic. Jadi akan terdapat banyak fungsi boolean, dan masing-masingnya tidak sederhana. Pada cycle ini, sinyal kontrol tidak lagi ditentukan dengan melihat pada bit-bit instruksinya. Bit-bit opcode memberitahukan operasi apa yang selanjutnya akan dijalankan CPU, bukan instruksi cycle selanjutnya.
+
+
+3.	Format Instruksi sebagai berikut:
+Op Code Alamat
+Kode Operasi (Op Code) direpresentasikan dengan singkatan-singkatan yang disebut mnemonic.
+Contoh Mnemonic
+•	ADD = Penambahan
+•	SUBB = Pengurangan
+•	LOAD = Muatkan data ke memori
+
+
+4.	Kelebihan menggunakan DMA :
+a.	Dapat menghemat waktu memproses
+b.	Cara yang lebih efisien untuk memindahkan data dari memori ke alat lainnya
+c.	CPU tidak terbebani oleh programmed I/O
+
+
+5.	Kagetori pipeline sebagai beriku:
+a.	Pipeline Unit Aritmatik untuk operasi vector
+b.	Pipleine unit instruction untuk computer yang mempunyai set instruksi sederhana
